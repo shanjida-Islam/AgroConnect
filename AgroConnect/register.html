@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - AgroConnect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue; /* Color name */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .register-container {
+            background-color: white; /* Color name */
+            padding: 20px; /* Slightly reduced padding */
+            border-radius: 5px; /* More rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Basic shadow */
+            width: 280px; /* Set width */
+            text-align: center; /* Center text */
+        }
+        h2 {
+            color: darkgreen; /* Color name */
+            margin-bottom: 10px; /* Margin below title */
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%; /* Full width */
+            padding: 8px; /* Padding */
+            margin: 10px 0; /* Margin */
+            border: 1px solid lightgray; /* Color name */
+            border-radius: 4px; /* Rounded corners */
+        }
+        button {
+            width: 100%; /* Full width */
+            padding: 8px; /* Padding */
+            background-color: darkgreen; /* Color name */
+            color: white; /* Text color */
+            border: none; /* Remove border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor */
+            font-weight: normal; /* Normal text weight */
+        }
+        button:hover {
+            background-color: green; /* Color name */
+        }
+        .links {
+            margin-top: 10px; /* Margin */
+        }
+        .links a {
+            color: darkgreen; /* Color name */
+            text-decoration: none; /* Remove underline */
+        }
+        .links a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register for AgroConnect</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <select required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="farmer">Farmers</option>
+                <option value="buyer">Buyers</option>
+                <option value="village_agent">Village Agents</option>
+            </select>
+            <button type="submit">Register</button>
+            <div class="links">
+                <p>Already have an account? <a href="login.html">Login Now</a></p> <!-- Updated link -->
+                <a href="#">Back</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
