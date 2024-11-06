@@ -60,6 +60,77 @@
             font-size: 18px; 
             color: #555; 
         }
+        .info-section {
+            padding: 30px 20px;
+            text-align: center;
+            color: #333;
+        }
+        .info-section h3 {
+            color: darkgreen;
+            font-size: 26px;
+            margin-top: 20px;
+        }
+        .info-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .learn-more-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: darkgreen;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .learn-more-button:hover {
+            background-color: green;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #f7f7f7;
+            padding: 30px 0;
+            font-size: 14px;
+            color: #333;
+        }
+        footer .footer-content {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: auto;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        footer .footer-content div {
+            text-align: center;
+            margin: 10px;
+        }
+        footer .footer-content img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        footer .social-icons a {
+            margin: 0 5px;
+            text-decoration: none;
+        }
+        footer .social-icons img {
+            height: 70px;
+        }
+        footer h4 {
+            color: darkgreen;
+            margin: 10px 0;
+        }
+        footer a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -67,7 +138,8 @@
         <div class="project-name">AgroConnect</div>
         <div class="nav-links">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
+            <a href="about.html">About</a>
+            <a href="#products">Products</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
             <a href="login.html">Login</a> 
@@ -83,5 +155,49 @@
         <img src="https://www.medianama.com/wp-content/uploads/2024/01/AI-agriculture.jpg" alt="Digital Farming">
         <p>Our mission is simple: connect farmers directly with buyers, making fresh produce accessible while supporting sustainable farming practices. Let’s grow together!</p>
     </div>
+
+    <div class="info-section">
+        <h3>Who We Are</h3>
+        <p>AgroConnect is an innovative platform dedicated to transforming Bangladesh’s agricultural sector by connecting farmers directly with consumers. We bridge the gap between farms and tables, ensuring fresh, quality produce while empowering local farmers with fair and sustainable income.</p>
+        
+        <h3>Our Mission</h3>
+        <p>Our mission is to create a sustainable agricultural ecosystem where farmers and consumers mutually benefit through technology-driven, direct market access. By simplifying the farm-to-table journey, we help farmers earn fair prices, reduce waste, and deliver high-quality food to communities.</p>
+        
+        <a href="about.html" class="learn-more-button">Learn More</a>
+    </div>
+
+    <!-- Updated Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <!-- Logo and Social Media Section -->
+            <div>
+               
+                <div class="social-icons">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <p>&copy; 2024 AgroConnect. All Rights Reserved.</p>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div>
+                <h4>Contact Us</h4>
+                <p>Email: support@agroconnect.com</p>
+                <p>Phone: +880123456789</p>
+                <p>Address: Dhaka, Bangladesh</p>
+            </div>
+
+            <!-- Information Section -->
+            <div>
+                <h4>Information</h4>
+                <a href="about.html">About Us</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
