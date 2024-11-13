@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroConnect - Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: darkgreen;
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .main-container {
+            display: flex;
+            padding: 20px;
+        }
+        .categories {
+            width: 20%;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+        .categories h3 {
+            color: darkgreen;
+            font-size: 22px;
+        }
+        .categories ul {
+            list-style: none;
+            padding: 0;
+        }
+        .categories li {
+            margin: 10px 0;
+        }
+        .categories a {
+            color: darkgreen;
+            text-decoration: none;
+        }
+        .categories a:hover {
+            text-decoration: underline;
+        }
+        .products {
+            width: 60%;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            padding: 15px;
+        }
+        .product-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+        }
+        .product-details {
+            margin-left: 20px;
+            flex-grow: 1;
+        }
+        .product-details h4 {
+            margin: 0;
+            color: darkgreen;
+            font-size: 20px;
+        }
+        .product-details p {
+            color: #555;
+        }
+        .add-to-cart {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: darkgreen;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .add-to-cart:hover {
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="project-name">AgroConnect</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- Categories Section -->
+        <div class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#vegetables">Vegetables</a></li>
+                <li><a href="#fruits">Fruits</a></li>
+                <li><a href="#daal">Pulses</a></li>
+            </ul>
+        </div>
+
+        <!-- Products Section -->
+        <div class="products">
+            <!-- vegetables Products -->
+            <h2 id="vegetables">Vegetables</h2>
+            <div class="product-card">
+                <img src="https://png.pngtree.com/png-vector/20240719/ourlarge/pngtree-proven-health-benefits-and-uses-of-cabbage-png-image_12977610.png">
+                <div class="product-details">
+                    <h4>Cabbage</h4>
+                    <p>Fresh and green cabbage.</p>
+                    <p><strong>Price:</strong> $1.20 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Cabbage', 1.20)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://field2fork.com.au/cdn/shop/files/product-cauliflower-whole_43d1cbe9-723a-4ab6-ba2f-5374d10f7aae.webp?v=1721217355" alt="Cauliflower">
+                <div class="product-details">
+                    <h4>Cauliflower</h4>
+                    <p>Organic and fresh cauliflower.</p>
+                    <p><strong>Price:</strong> $1.80 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Cauliflower', 1.80)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.pixabay.com/photo/2023/04/26/16/19/potatoes-7952746_640.jpg" alt="Potatoes">
+                <div class="product-details">
+                    <h4>Potato</h4>
+                    <p>Nutritious potatoes.</p>
+                    <p><strong>Price:</strong> $0.80 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Potato', 0.80)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/ECOM/Default/2024/9/449575195/KT/EJ/IO/61960950/yellowonionmedium-1725885133041-500x500.jpeg" alt="Yellow Onions">
+                <div class="product-details">
+                    <h4>Onion</h4>
+                    <p>Fresh onions.</p>
+                    <p><strong>Price:</strong> $2.20 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Onion', 2.20)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://apnaugao.com/cdn/shop/products/redcarrots.png?v=1662036578" alt="Red Carrots">
+                <div class="product-details">
+                    <h4>Carrots</h4>
+                    <p>Sweet carrots.</p>
+                    <p><strong>Price:</strong> $1.50 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Carrots', 1.50)">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Fruit Products -->
+            <h2 id="fruits">Fruits</h2>
+            <div class="product-card">
+                <img src="https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/I%E2%80%99ve-heard-that-pomegranates-have-many-health-benefits-resized.jpg" alt="Pomegranate">
+                <div class="product-details">
+                    <h4>Pomegranate</h4>
+                    <p>Fresh and juicy pomegranates.</p>
+                    <p><strong>Price:</strong> $3.50 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Pomegranate', 3.50)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/183422512/photo/fresh-red-apples-on-white-background.jpg?s=612x612&w=0&k=20&c=OmfmcQLh3mwp4pFVQn9Sr2U8VCyIgGtV6fuaDmd3Yrk=" alt="Red Apples">
+                <div class="product-details">
+                    <h4>Red Apples</h4>
+                    <p>Sweet apples.</p>
+                    <p><strong>Price:</strong> $3.00 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Red Apples', 3.00)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.apollo247.in/pd-cms/cms/2024-07/view-delicious-dragon-fruit%20(2).jpg" alt="Dragon Fruit">
+                <div class="product-details">
+                    <h4>Dragon Fruit</h4>
+                    <p>Exotic and delicious dragon fruit.</p>
+                    <p><strong>Price:</strong> $4.50 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Dragon Fruit', 4.50)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://www.royalfruitz.com/wp-content/uploads/2018/02/orange__1-1.jpg" alt="Orange">
+                <div class="product-details">
+                    <h4>Orange</h4>
+                    <p>Juicy and tangy oranges.</p>
+                    <p><strong>Price:</strong> $2.80 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Orange', 2.80)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://im.pluckk.in/unsafe/1200x0/uploads/6996-pineapple.jpg" alt="Pineapple">
+                <div class="product-details">
+                    <h4>Pineapple</h4>
+                    <p>Fresh and tropical pineapple.</p>
+                    <p><strong>Price:</strong> $3.20 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Pineapple', 3.20)">Add to Cart</a>
+                </div>
+            </div>
+
+            <!-- Pulses Products -->
+            <h2 id="daal">Pulses</h2>
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/1150752068/photo/red-lentil-or-masoor-dal-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=Y0YmYaNIzB_I9Icza_rh598o6ungiw5BljgWZ1lD0j0=" alt="Red Lentils">
+                <div class="product-details">
+                    <h4>Red Lentils</h4>
+                    <p>High-quality red lentils.</p>
+                    <p><strong>Price:</strong> $1.50 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Red Lentils', 1.50)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/345444395/RZ/MM/JI/193385661/25kg-yellow-lentil-500x500.jpg" alt="Yellow Lentils">
+                <div class="product-details">
+                    <h4>Yellow Lentils</h4>
+                    <p>Premium quality yellow lentils.</p>
+                    <p><strong>Price:</strong> $1.80 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Yellow Lentils', 1.80)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://frozentabali.com/wp-content/uploads/2021/09/green-split-peas-thumb.jpeg" alt="Green Split Peas">
+                <div class="product-details">
+                    <h4>Green Split Peas</h4>
+                    <p>Perfect for soups and stews.</p>
+                    <p><strong>Price:</strong> $2.00 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Green Split Peas', 2.00)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://static8.depositphotos.com/1566955/1028/i/450/depositphotos_10284692-stock-photo-kidney-beans.jpg" alt="Kidney Beans">
+                <div class="product-details">
+                    <h4>Kidney Beans</h4>
+                    <p>Rich and flavorful kidney beans.</p>
+                    <p><strong>Price:</strong> $2.20 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Kidney Beans', 2.20)">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cleanpantry.com.au/cdn/shop/products/rendered_fea6e844-2401-47b6-b898-0867c0300130_530x@2x.jpg?v=1587976103" alt="Black Beans">
+                <div class="product-details">
+                    <h4>Black Beans</h4>
+                    <p>High-protein black beans.</p>
+                    <p><strong>Price:</strong> $2.50 per kg</p>
+                    <a href="#" class="add-to-cart" onclick="addToCart('Black Beans', 2.50)">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Array to hold cart items
+        let cart = [];
+
+        // Function to add products to the cart
+        function addToCart(productName, price) {
+            let product = {
+                name: productName,
+                price: price
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+            console.log(cart); // For debugging purposes, logs cart items
+
+            // Optional: Alert user when product is added
+            alert(productName + " has been added to your cart!");
+        }
+    </script>
+</body>
+</html>    
